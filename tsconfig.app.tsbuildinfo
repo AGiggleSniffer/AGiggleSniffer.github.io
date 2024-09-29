@@ -1,0 +1,1 @@
+{"root":["./src/App.tsx","./src/main.tsx","./src/vite-env.d.ts","./src/components/AdventurerCamp.tsx","./src/components/CanvasLoader.tsx","./src/components/sections/Hero.tsx","./src/components/sections/NavBar.tsx","./src/components/sections/NavItems.tsx","./src/constants/index.ts"],"version":"5.6.2"}
