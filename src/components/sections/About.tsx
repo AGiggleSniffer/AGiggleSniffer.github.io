@@ -19,16 +19,12 @@ const About = () => {
 		<section className="c-space my-20">
 			<div className="grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full">
 				<div className="col-span-1 xl:row-span-3">
-					<div className="grid-container">
-						<img
-							src="/me.jpg"
-							alt="grid-1"
-							className="w-full sm:h-[276px] h-fit object-contain"
-						/>
-
-						<div>
-							<p className="grid-headtext">Hi, I'm Chris</p>
-							<p className="grid-subtext">
+					<div className="grid-container justify-end bg-[url('/me.jpg')] bg-cover bg-center ">
+						<div className="pr-32">
+							<p className="grid-headtext drop-shadow-[0_1.2px_1.2px_rgba(0,0,0)]">
+								Hi, I'm Chris
+							</p>
+							<p className="text-base font-generalsans text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0)] ">
 								I developed a passion for technology early on,
 								starting in middle school with a tech class that
 								introduced me to software engineering concepts
