@@ -4,7 +4,7 @@ type NavLink = {
 	href: string;
 };
 
-export const navLinks: NavLink[] = [
+export const navLinks = [
 	{
 		id: 1,
 		name: "Home",
@@ -77,22 +77,22 @@ export const myProjects = [
 			{
 				id: 1,
 				name: "React.js",
-				path: "/assets/react.svg",
+				path: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
 			},
 			{
 				id: 2,
 				name: "TailwindCSS",
-				path: "assets/tailwindcss.png",
+				path: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
 			},
 			{
 				id: 3,
 				name: "TypeScript",
-				path: "/assets/typescript.png",
+				path: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
 			},
 			{
 				id: 4,
 				name: "Framer Motion",
-				path: "/assets/framer.png",
+				path: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg",
 			},
 		],
 	},

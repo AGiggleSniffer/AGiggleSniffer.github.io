@@ -20,11 +20,11 @@ const About = () => {
 			<div className="grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full">
 				<div className="col-span-1 xl:row-span-3">
 					<div className="grid-container justify-end bg-[url('/me.jpg')] bg-cover bg-center ">
-						<div className="pr-32">
+						<div className="pr-40">
 							<p className="grid-headtext drop-shadow-[0_1.2px_1.2px_rgba(0,0,0)]">
 								Hi, I'm Chris
 							</p>
-							<p className="text-base font-generalsans text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0)] ">
+							<p className="text-base font-generalsans text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0)]">
 								I developed a passion for technology early on,
 								starting in middle school with a tech class that
 								introduced me to software engineering concepts
@@ -39,15 +39,15 @@ const About = () => {
 						<div>
 							<p className="grid-headtext">More About Me</p>
 							<p className="grid-subtext">
-								{"\t"}During the COVID-19 pandemic, I reignited
-								my interest in technology, experimenting with
+								During the COVID-19 pandemic, I reignited my
+								interest in technology, experimenting with
 								projects like creating a VPN on a Raspberry Pi.
 								This experience, coupled with a growing love for
 								PC gaming, led me to pursue a career in IT.
 								<br />
 								<br />
-								{"\t"}In my IT role, I automated repetitive
-								tasks using batch scripting, Windows CMD, and
+								In my IT role, I automated repetitive tasks
+								using batch scripting, Windows CMD, and
 								Powershell, eventually learning C# to enhance
 								these solutions. Now, I'm eager to continue
 								solving problems through software development,

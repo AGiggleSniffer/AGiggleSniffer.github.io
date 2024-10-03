@@ -88,17 +88,17 @@ const SpaceCamp = (props: JSX.IntrinsicElements["group"]) => {
 	const { scene, animations } = useGLTF("/spaceCamp.glb");
 	const clone = React.useMemo(() => SkeletonUtils.clone(scene), [scene]);
 	const { nodes, materials } = useGraph(clone) as GLTFResult;
-  const { actions, names } = useAnimations(animations, group);
+	const { actions, names } = useAnimations(animations, group);
 
-  useEffect(() => {
-    actions[names[0]]?.reset().play()
-  }, [])
-  
-  // useFrame(() => {
+	useEffect(() => {
+		actions[names[0]]?.reset().play();
+	}, []);
+
+	// useFrame(() => {
 	// 	if (group.current) {
 	// 		group.current.rotation.y += 0.0005;
 	// 	}
-  // });
+	// });
 
 	return (
 		<group ref={group} {...props} dispose={null}>
