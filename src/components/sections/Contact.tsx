@@ -57,6 +57,7 @@ const Contact = () => {
 
 	return (
 		<section className="c-space my-20">
+			<div className="bg-transparent h-20" id="contact" />
 			<div className="relative min-h-screen flex items-center justify-center flex-col">
 				<div className="contact-container">
 					<p className="head-text">Dont Be Shy, Say Hi!</p>

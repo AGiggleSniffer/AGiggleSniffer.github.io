@@ -75,11 +75,13 @@ const About = () => {
 								different times.
 							</p>
 						</div>
-						<ContactButton
-							name="Contact Me"
-							isBeam
-							containerClass="w-full mt-10"
-						/>
+						<a href="#contact">
+							<ContactButton
+								name="Contact Me"
+								isBeam
+								containerClass="w-full mt-10"
+							/>
+						</a>
 					</div>
 				</div>
 
