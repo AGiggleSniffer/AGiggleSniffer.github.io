@@ -5,12 +5,13 @@
 	"type": "module",
 	"homepage": "http://AGiggleSniffer.github.io",
 	"scripts": {
-		"dev": "vite",
-		"build": "tsc -b && vite build",
 		"lint": "eslint .",
 		"preview": "vite preview",
+		"dev": "vite",
+		"prebuild": "tsc -b",
+		"build": "vite build",
 		"predeploy": "npm run build",
-		"deploy": "gh-pages -d build"
+		"deploy": "gh-pages -d dist"
 	},
 	"dependencies": {
 		"@emailjs/browser": "^4.4.1",
