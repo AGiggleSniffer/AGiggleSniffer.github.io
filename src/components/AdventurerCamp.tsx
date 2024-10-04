@@ -9,9 +9,8 @@ Title: Quill - Adventurers at Rest
 
 import * as THREE from "three";
 import React from "react";
-import { useGLTF, useAnimations } from "@react-three/drei";
+import { useGLTF } from "@react-three/drei";
 import { GLTF } from "three-stdlib";
-import { useFrame } from "@react-three/fiber";
 
 type ActionName = "Object_0";
 
@@ -325,10 +324,10 @@ type GLTFResult = GLTF & {
 
 const AdventurersCamp = (props: JSX.IntrinsicElements["group"]) => {
 	const group = React.useRef<THREE.Group>(null!);
-	const { nodes, materials, animations } = useGLTF(
+	const { nodes, materials } = useGLTF(
 		"/adventurers.glb",
 	) as GLTFResult;
-	const { actions } = useAnimations(animations, group);  
+
 	return (
 		<group ref={group} {...props} dispose={null}>
 			<group name="Sketchfab_Scene">

@@ -20,7 +20,13 @@ const Hero = () => {
 			<div className="w-full mx-auto flex flex-col sm:mt-36 mt-20 c-space gap-3 z-10">
 				<p className="sm:text-3xl text-2xl font-medium text-white text-center font-generalsans">
 					Hi! I'm Chris{" "}
-					<span className="waving-hand text-3xl">👋</span>
+					<img
+						src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Waving%20Hand.png"
+						alt="Waving Hand"
+						width="35"
+						height="35"
+						className="waving-hand text-3xl -translate-y-2"
+					/>
 				</p>
 				<p className="hero_tag text-gray_gradient">
 					A software engineer who likes to make immersive environments
@@ -52,7 +58,7 @@ const Hero = () => {
 			</div>
 
 			<div className="absolute bottom-7 left-0 right-0 w-full z-10 c-space">
-				<a href="#contact" className="w-fit">
+				<a href="#about" className="w-fit">
 					<ContactButton
 						name="Let's work together"
 						isBeam

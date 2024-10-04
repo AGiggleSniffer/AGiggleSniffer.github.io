@@ -1,4 +1,5 @@
-import { FaRegEnvelope, FaCopy, FaCheck } from "react-icons/fa6";
+import { FaRegEnvelope, FaCopy, FaCheck, FaGithub } from "react-icons/fa6";
+import { SiThreedotjs, SiFlask } from "react-icons/si";
 import ContactButton from "../ContactButton";
 import CloudyGlobe from "../CloudyGlobe";
 import { useState } from "react";
@@ -17,6 +18,7 @@ const About = () => {
 
 	return (
 		<section className="c-space my-20">
+			<div className="bg-transparent h-20" id="about" />
 			<div className="grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full">
 				<div className="col-span-1 xl:row-span-3">
 					<div className="grid-container justify-end bg-[url('/me.jpg')] bg-cover bg-center ">
@@ -89,6 +91,78 @@ const About = () => {
 								I specialize in JavaScript/TypeScript with a
 								focus on React.
 							</p>
+						</div>
+
+						<p className="grid-subtext">Languages:</p>
+						<div className="flex flex-wrap *:h-[50px] *:w-[50px] gap-5">
+							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+
+							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
+
+							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+
+							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+
+							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" />
+
+							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
+
+							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" />
+
+							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bash/bash-original.svg" />
+
+							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/powershell/powershell-original.svg" />
+						</div>
+
+						<p className="grid-subtext">Technologies:</p>
+						<div className="flex flex-wrap *:h-[50px] *:w-[50px] gap-5">
+							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
+
+							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg" />
+
+							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" />
+
+							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg" />
+
+							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
+
+							<SiThreedotjs className="text-white" />
+
+							<SiFlask className="text-white" />
+
+							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg" />
+
+							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unity/unity-original.svg" />
+						</div>
+
+						<p className="grid-subtext">Database:</p>
+						<div className="flex flex-wrap *:h-[50px] *:w-[50px] gap-5">
+							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" />
+
+							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg" />
+
+							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" />
+
+							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlalchemy/sqlalchemy-original.svg" />
+
+							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" />
+
+							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sequelize/sequelize-original.svg" />
+						</div>
+
+						<p className="grid-subtext">Deployment:</p>
+						<div className="flex flex-wrap *:h-[50px] *:w-[50px] gap-5">
+							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" />
+
+							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-original.svg" />
+
+							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
+
+							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bitbucket/bitbucket-original.svg" />
+
+							<FaGithub className="text-white" />
+
+							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/githubactions/githubactions-original.svg" />
 						</div>
 					</div>
 				</div>

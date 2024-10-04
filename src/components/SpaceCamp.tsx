@@ -9,7 +9,7 @@ Title: Space Ame Camping - Amelia Watson Hololive
 
 import * as THREE from "three";
 import React, { useEffect } from "react";
-import { useFrame, useGraph } from "@react-three/fiber";
+import { useGraph } from "@react-three/fiber";
 import { useGLTF, useAnimations } from "@react-three/drei";
 import { GLTF, SkeletonUtils } from "three-stdlib";
 

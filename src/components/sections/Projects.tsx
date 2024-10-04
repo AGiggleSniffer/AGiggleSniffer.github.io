@@ -69,16 +69,26 @@ const Projects = () => {
 							))}
 						</div>
 
-						<a
-							className="flex items-center gap-2 cursor-pointer text-white-600"
-							target="_blank"
-							rel="noreferrer"
-						>
-							<p>Check Live Site</p>
-							<FaArrowUpRightFromSquare
-								className={`w-3 h-3 text-white`}
-							/>
-						</a>
+						{currentProject.href ? (
+							<a
+								className="flex items-center gap-2 cursor-pointer text-white-600"
+								target="_blank"
+								rel="noreferrer"
+								href={currentProject.href}
+							>
+								<p>Check Live Site</p>
+								<FaArrowUpRightFromSquare
+									className={`w-3 h-3 text-white`}
+								/>
+							</a>
+						) : (
+							<a className="flex items-center gap-2 cursor-pointer text-white-600">
+								<p>(Work In Progress)</p>
+								<FaArrowUpRightFromSquare
+									className={`w-3 h-3 text-white`}
+								/>
+							</a>
+						)}
 					</div>
 
 					<div className="flex justify-between items-center mt-7">
@@ -108,11 +118,16 @@ const Projects = () => {
 									position={[0, -3, 0]}
 									rotation={[0, -0.1, 0]}
 								>
-									<DemoComputer />
+									<DemoComputer
+										texture={currentProject.texture}
+									/>
 								</group>
 							</Suspense>
-                        </Center>
-                        <OrbitControls maxPolarAngle={Math.PI / 2} enableZoom={false} />
+						</Center>
+						<OrbitControls
+							maxPolarAngle={Math.PI / 2}
+							enableZoom={false}
+						/>
 					</Canvas>
 				</div>
 			</div>

@@ -1,9 +1,3 @@
-type NavLink = {
-	id: number;
-	name: string;
-	href: string;
-};
-
 export const navLinks = [
 	{
 		id: 1,
@@ -27,48 +21,54 @@ export const navLinks = [
 	},
 ];
 
-export const clientReviews = [
-	{
-		id: 1,
-		name: "Emily Johnson",
-		position: "Marketing Director at GreenLeaf",
-		img: "assets/review1.png",
-		review: "Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.",
-	},
-	{
-		id: 2,
-		name: "Mark Rogers",
-		position: "Founder of TechGear Shop",
-		img: "assets/review2.png",
-		review: "Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional! Fantastic work.",
-	},
-	{
-		id: 3,
-		name: "John Dohsas",
-		position: "Project Manager at UrbanTech ",
-		img: "assets/review3.png",
-		review: "I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
-	},
-	{
-		id: 4,
-		name: "Ether Smith",
-		position: "CEO of BrightStar Enterprises",
-		img: "assets/review4.png",
-		review: "Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend backend dev are top-notch.",
-	},
-];
-
 export const myProjects = [
 	{
-		title: "Podcastr - AI Podcast Platform",
-		desc: "Podcastr is a revolutionary Software-as-a-Service platform that transforms the way podcasts are created. With advanced AI-powered features like text-to-multiple-voices functionality, it allows creators to generate diverse voiceovers from a single text input.",
+		title: "Security Installer - Windows Support Tool",
+		desc: "A utility application for Windows, designed to install essential support tools and gather hardware information. This tool simplifies the maintenance process for users.",
 		subdesc:
-			"Built as a unique Software-as-a-Service app with Next.js 14, Tailwind CSS, TypeScript, Framer Motion and Convex, Podcastr is designed for optimal performance and scalability.",
-		href: "https://www.youtube.com/watch?v=zfAb95tJvZQ",
-		texture: "/textures/project/project1.mp4",
-		logo: "/assets/project-logo1.png",
+			"Built in C# with optimized task execution and a visually appealing XAML-based UI. Features a progress bar for real-time download tracking and a file writer for API-based direct downloads.",
+		href: "https://github.com/AGiggleSniffer/SecurityInstaller",
+		texture: "/textures/astro.mp4",
+		logo: "/assets/astro.png",
 		logoStyle: {
-			backgroundColor: "#2A1816",
+			backgroundColor: "#60a8f5",
+			border: "0.2px solid #17293E",
+			boxShadow: "0px 0px 60px 0px #2F6DB54D",
+		},
+		spotlight: "/assets/spotlight2.png",
+		tags: [
+			{
+				id: 1,
+				name: ".NET",
+				path: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg",
+			},
+			{
+				id: 2,
+				name: "C Sharp",
+				path: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg",
+			},
+			{
+				id: 3,
+				name: "XML",
+				path: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/xml/xml-original.svg",
+			},
+			{
+				id: 4,
+				name: "NuGet",
+				path: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nuget/nuget-original.svg",
+			},
+		],
+	},
+	{
+		title: "Canvas Collective - Fun Art Website",
+		desc: "Canvas Collective is a creative website that allows users to design and display simple yet engaging art. The platform offers dynamic visual effects, enhancing user interaction and creativity.",
+		subdesc:
+			"Utilizing SVG and Perlin noise, this project maps custom noise over elements in React, while abstracting canvas functionality into a custom React hook. Secure user authentication is implemented using BCrypt for robust password management.",
+		href: "canvas-collective.onrender.com/",
+		texture: "/textures/canvas.mp4",
+		logo: "/assets/canvas.png",
+		logoStyle: {
+			backgroundColor: "#f56070",
 			border: "0.2px solid #36201D",
 			boxShadow: "0px 0px 60px 0px #AA3C304D",
 		},
@@ -81,66 +81,104 @@ export const myProjects = [
 			},
 			{
 				id: 2,
-				name: "TailwindCSS",
-				path: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+				name: "JavaScript",
+				path: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
 			},
 			{
 				id: 3,
-				name: "TypeScript",
-				path: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+				name: "Redux",
+				path: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg",
 			},
 			{
 				id: 4,
-				name: "Framer Motion",
-				path: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg",
+				name: "ExpressJS",
+				path: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg",
 			},
 		],
 	},
 	{
-		title: "LiveDoc - Real-Time Google Docs Clone",
-		desc: "LiveDoc is a powerful collaborative app that elevates the capabilities of real-time document editing. As an enhanced version of Google Docs, It supports millions of collaborators simultaneously, ensuring that every change is captured instantly and accurately.",
+		title: "Zombie Survival - 3D Co-op Game",
+		desc: "A multiplayer 3D survival game where players can team up in a co-op environment to fend off zombies. The game offers interactive physics and immersive environments. ",
 		subdesc:
-			"With LiveDoc, users can experience the future of collaboration, where multiple contributors work together in real time without any lag, by using Next.js and Liveblocks newest features.",
-		href: "https://www.youtube.com/watch?v=y5vE8y_f_OM",
-		texture: "/textures/project/project2.mp4",
-		logo: "/assets/project-logo2.png",
+			"Developed using ThreeJS and React for the 3D environment, RapierJS for physics, and Socket.io for real-time communication. The server authoritative logic ensures secure and fair gameplay.",
+		href: null,
+		texture: "/textures/zombs.mp4",
+		logo: "/assets/zomb.png",
 		logoStyle: {
-			backgroundColor: "#13202F",
-			border: "0.2px solid #17293E",
-			boxShadow: "0px 0px 60px 0px #2F6DB54D",
+			backgroundColor: "#b060f5",
+			border: "0.2px solid #252262",
+			boxShadow: "0px 0px 60px 0px #635BFF4D",
 		},
-		spotlight: "/assets/spotlight2.png",
+		spotlight: "/assets/spotlight5.png",
 		tags: [
 			{
 				id: 1,
 				name: "React.js",
-				path: "/assets/react.svg",
+				path: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
 			},
 			{
 				id: 2,
-				name: "TailwindCSS",
-				path: "assets/tailwindcss.png",
+				name: "JavaScript",
+				path: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
 			},
 			{
 				id: 3,
-				name: "TypeScript",
-				path: "/assets/typescript.png",
+				name: "ThreeJS",
+				path: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/threejs/threejs-original.svg",
 			},
 			{
 				id: 4,
-				name: "Framer Motion",
-				path: "/assets/framer.png",
+				name: "RapierRS",
+				path: "/assets/rapier.png",
 			},
 		],
 	},
 	{
-		title: "CarePulse - Health Management System",
-		desc: "An innovative healthcare platform designed to streamline essential medical processes. It simplifies patient registration, appointment scheduling, and medical record management, providing a seamless experience for both healthcare providers and patients.",
+		title: "Book and Stay - Airbnb Clone",
+		desc: "A full-stack Airbnb clone that manages vacation rentals, showcasing comprehensive functionality for listing properties, booking stays, and displaying interactive content.",
 		subdesc:
-			"With a focus on efficiency, CarePulse integrantes complex forms and SMS notifications, by using Next.js, Appwrite, Twillio and Sentry that enhance operational workflows.",
-		href: "https://www.youtube.com/watch?v=lEflo_sc82g",
-		texture: "/textures/project/project3.mp4",
-		logo: "/assets/project-logo3.png",
+			"Developed with ExpressJS, Sequelize, and Redux for data persistence and state management. Integrated the Pexels API for dynamic photo seeding and enhanced UX with a custom cursor hook.",
+		href: "https://airbnb-json-api.onrender.com/",
+		texture: "/textures/bands.mp4",
+		logo: "/assets/bands.png",
+
+		logoStyle: {
+			backgroundColor: "#60e0f5",
+			border: "0.2px solid #0E2D58",
+			boxShadow: "0px 0px 60px 0px #2F67B64D",
+		},
+		spotlight: "/assets/spotlight4.png",
+		tags: [
+			{
+				id: 1,
+				name: "React.js",
+				path: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+			},
+			{
+				id: 2,
+				name: "JavaScript",
+				path: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+			},
+			{
+				id: 3,
+				name: "Redux",
+				path: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg",
+			},
+			{
+				id: 4,
+				name: "NodeJS",
+				path: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg",
+			},
+		],
+	},
+	{
+		title: "Uber Eats Clone - Team Project",
+		desc: "A collaborative project recreating the core functionality of Uber Eats, streamlining food ordering and delivery. The app focuses on delivering a seamless user experience similar to the popular food delivery platform.",
+		subdesc:
+			"Leveraged Docker for streamlined deployment, using Flask and Python to build a robust API with SQLAlchemy. The project emphasized team collaboration, error handling, and server stability.",
+		href: "https://ue-project.onrender.com/",
+		texture: "/textures/ue.mp4",
+		logo: "/assets/ue.png",
 		logoStyle: {
 			backgroundColor: "#60f5a1",
 			background:
@@ -153,96 +191,64 @@ export const myProjects = [
 			{
 				id: 1,
 				name: "React.js",
-				path: "/assets/react.svg",
+				path: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
 			},
 			{
 				id: 2,
-				name: "TailwindCSS",
-				path: "assets/tailwindcss.png",
+				name: "JavaScript",
+				path: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
 			},
 			{
 				id: 3,
-				name: "TypeScript",
-				path: "/assets/typescript.png",
+				name: "Python",
+				path: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
 			},
 			{
 				id: 4,
-				name: "Framer Motion",
-				path: "/assets/framer.png",
+				name: "Flask",
+				path: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg",
+			},
+			{
+				id: 5,
+				name: "Docker",
+				path: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg",
 			},
 		],
 	},
 	{
-		title: "Horizon - Online Banking Platform",
-		desc: "Horizon is a comprehensive online banking platform that offers users a centralized finance management dashboard. It allows users to connect multiple bank accounts, monitor real-time transactions, and seamlessly transfer money to other users.",
+		title: "Portfolio Website - Personal Development Showcase",
+		desc: "A dynamic and visually engaging portfolio website showcasing projects and skills. Built with modern web technologies, it highlights my expertise in full-stack development and design.",
 		subdesc:
-			"Built with Next.js 14 Appwrite, Dwolla and Plaid, Horizon ensures a smooth and secure banking experience, tailored to meet the needs of modern consumers.",
-		href: "https://www.youtube.com/watch?v=PuOVqP_cjkE",
-		texture: "/textures/project/project4.mp4",
-		logo: "/assets/project-logo4.png",
+			"Developed using React, TypeScript, and Tailwind CSS for a responsive and user-friendly interface, with 3D visual elements created using Three.js. The site is deployed seamlessly through GitHub Actions and GitHub Pages, ensuring efficient updates and maintenance.",
+		href: "/",
+		texture: "/textures/transition.mp4",
+		logo: "/assets/doge.jpg",
 		logoStyle: {
-			backgroundColor: "#0E1F38",
-			border: "0.2px solid #0E2D58",
-			boxShadow: "0px 0px 60px 0px #2F67B64D",
+			backgroundColor: "#f56070",
+			border: "0.2px solid #36201D",
+			boxShadow: "0px 0px 60px 0px #AA3C304D",
 		},
-		spotlight: "/assets/spotlight4.png",
+		spotlight: "/assets/spotlight1.png",
 		tags: [
 			{
 				id: 1,
 				name: "React.js",
-				path: "/assets/react.svg",
+				path: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
 			},
 			{
 				id: 2,
-				name: "TailwindCSS",
-				path: "assets/tailwindcss.png",
+				name: "TypeScript",
+				path: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
 			},
 			{
 				id: 3,
-				name: "TypeScript",
-				path: "/assets/typescript.png",
+				name: "Tailwind",
+				path: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
 			},
 			{
 				id: 4,
-				name: "Framer Motion",
-				path: "/assets/framer.png",
-			},
-		],
-	},
-	{
-		title: "Imaginify - AI Photo Manipulation App",
-		desc: "Imaginify is a groundbreaking Software-as-a-Service application that empowers users to create stunning photo manipulations using AI technology. With features like AI-driven image editing, a payments system, and a credits-based model.",
-		subdesc:
-			"Built with Next.js 14, Cloudinary AI, Clerk, and Stripe, Imaginify combines cutting-edge technology with a user-centric approach. It can be turned into a side income or even a full-fledged business.",
-		href: "https://www.youtube.com/watch?v=Ahwoks_dawU",
-		texture: "/textures/project/project5.mp4",
-		logo: "/assets/project-logo5.png",
-		logoStyle: {
-			backgroundColor: "#1C1A43",
-			border: "0.2px solid #252262",
-			boxShadow: "0px 0px 60px 0px #635BFF4D",
-		},
-		spotlight: "/assets/spotlight5.png",
-		tags: [
-			{
-				id: 1,
-				name: "React.js",
-				path: "/assets/react.svg",
-			},
-			{
-				id: 2,
-				name: "TailwindCSS",
-				path: "assets/tailwindcss.png",
-			},
-			{
-				id: 3,
-				name: "TypeScript",
-				path: "/assets/typescript.png",
-			},
-			{
-				id: 4,
-				name: "Framer Motion",
-				path: "/assets/framer.png",
+				name: "Github Actions",
+				path: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/githubactions/githubactions-original.svg",
 			},
 		],
 	},

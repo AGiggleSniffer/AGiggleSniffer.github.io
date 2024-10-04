@@ -4,8 +4,8 @@ Command: npx gltfjsx@6.5.2 computer.glb -t -o DemoComputer.tsx -s
 */
 
 import * as THREE from "three";
-import React, { useEffect } from "react";
-import { useGLTF, useAnimations, useVideoTexture } from "@react-three/drei";
+import React, { useEffect, useState } from "react";
+import { useGLTF, useVideoTexture } from "@react-three/drei";
 import { GLTF } from "three-stdlib";
 
 type ActionName = "Take 001";
@@ -39,17 +39,36 @@ type GLTFResult = GLTF & {
 	animations: GLTFAction[];
 };
 
-const DemoComputer = (props: JSX.IntrinsicElements["group"]) => {
-	const group = React.useRef<THREE.Group>(null!);
-	const { nodes, materials, animations } = useGLTF(
-		"/computer.glb",
-	) as GLTFResult;
-	const { actions, names } = useAnimations(animations, group);
+type ComputerProps = {
+	texture: string;
+};
 
-	const txt = useVideoTexture("textures/astro.mp4");
+const DemoComputer = ({ texture }: ComputerProps) => {
+	const group = React.useRef<THREE.Group>(null!);
+	const { nodes, materials } = useGLTF("/computer.glb") as GLTFResult;
+	const [txt, setTxt] = useState<THREE.VideoTexture>(null!);
+
+	const transition = useVideoTexture("/textures/transition.mp4");
+
+	const vidTxt = useVideoTexture(texture);
+
+	useEffect(() => {
+		setTxt(transition);
+		const id = setTimeout(() => {
+			setTxt(vidTxt);
+		}, 200);
+
+		return () => clearTimeout(id);
+	}, [texture]);
+
+	useEffect(() => {
+		if (txt) {
+			txt.flipY = false;
+		}
+	}, [txt]);
 
 	return (
-		<group ref={group} {...props} dispose={null}>
+		<group ref={group} dispose={null}>
 			<group name="Scene">
 				<group
 					name="RootNode"
