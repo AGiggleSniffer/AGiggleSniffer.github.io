@@ -3,7 +3,7 @@
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",
-	"homepage": "http://AGiggleSniffer.github.io",
+	"homepage": "http://AGiggleSniffer.github.io/portfolio",
 	"scripts": {
 		"lint": "eslint .",
 		"preview": "vite preview",
