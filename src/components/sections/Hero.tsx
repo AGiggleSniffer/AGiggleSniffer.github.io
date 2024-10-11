@@ -1,5 +1,6 @@
 import { Suspense } from "react";
 import { PerspectiveCamera } from "@react-three/drei";
+import { Perf } from "r3f-perf";
 import { Canvas } from "@react-three/fiber";
 import CanvasLoader from "../CanvasLoader";
 import SpaceCamp from "../SpaceCamp";
@@ -17,6 +18,7 @@ const Hero = () => {
 
 	return (
 		<section className="min-h-screen w-full flex flex-col">
+			<div className="bg-transparent h-20" id="home" />
 			<div className="w-full mx-auto flex flex-col sm:mt-36 mt-20 c-space gap-3 z-10">
 				<p className="sm:text-3xl text-2xl font-medium text-white text-center font-generalsans">
 					Hi! I'm Chris{" "}
@@ -36,6 +38,7 @@ const Hero = () => {
 
 			<div className="w-full h-full absolute inset-0">
 				<Canvas className="w-full h-full z-0">
+					<Perf className="mt-20" />
 					<Suspense fallback={<CanvasLoader />}>
 						<PerspectiveCamera makeDefault position={[0, 0, 1]} />
 

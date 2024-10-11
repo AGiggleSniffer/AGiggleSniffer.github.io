@@ -66,11 +66,13 @@ const Contact = () => {
 						your existing platform, or bring a unique project to
 						life, I'm here to help.
 					</p>
+					<br />
 					<p className="text-lg text-white-600">
 						By Phone: +1 (916) 412-7799
 					</p>
+					<br />
 					<p className="text-lg text-white-600">
-						Or Email Below
+						Or Email Below:
 						<img
 							src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Backhand%20Index%20Pointing%20Down.png"
 							alt="Backhand Index Pointing Down"

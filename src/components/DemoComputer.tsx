@@ -46,10 +46,10 @@ type ComputerProps = {
 const DemoComputer = ({ texture }: ComputerProps) => {
 	const group = React.useRef<THREE.Group>(null!);
 	const { nodes, materials } = useGLTF("/computer.glb") as GLTFResult;
-	const [txt, setTxt] = useState<THREE.VideoTexture>(null!);
+
+	const [txt, setTxt] = useState<THREE.VideoTexture>();
 
 	const transition = useVideoTexture("/textures/transition.mp4");
-
 	const vidTxt = useVideoTexture(texture);
 
 	useEffect(() => {
